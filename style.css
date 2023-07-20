@@ -1,0 +1,44 @@
+:root{
+    --cor-destaque: #1A1A1A;
+    --ball-position: 2px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--cor-destaque);
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.bar{
+    background-color: rgb(209, 207, 207);
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+    display: flex;
+}
+
+.ball{
+    position: relative;
+    height: 36px;
+    width: 36px;
+    background-color: rgb(64, 160, 216);
+    border-radius: 50%;
+    left: var(--ball-position);
+    transition: left 1s;
+    display: flex;
+    justify-content: center;
+}
+
+.dark-theme {
+    --cor-destaque: #EDEDED;
+    --ball-position: calc(100% - 40px);
+}
